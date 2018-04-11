@@ -3,7 +3,7 @@ import { setOptions } from '@storybook/addon-options';
 import { setDefaults } from '@storybook/addon-info';
 
 setOptions({
-  name: 'Common Components',
+  name: 'React-Pose Act',
   url: 'https://github.com/rkhayat/react-pose-act',
   goFullScreen: false,
   showLeftPanel: true,

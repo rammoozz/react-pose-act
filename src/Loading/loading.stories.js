@@ -34,7 +34,8 @@ storiesOf('Loading', module)
     withInfo({propTables:[Loading],propTablesExclude:[Foo],text:`
       
       import Loading from 'react-pose-act/lib/Loading'
-      <Loading isLoading={isLoading}>Loaded</Loading>
+
+        <Loading isLoading={isLoading}>Loaded</Loading>
     `})(() =>
       <Foo>Hi!</Foo>
     )

@@ -4,7 +4,7 @@ import { setDefaults } from '@storybook/addon-info';
 
 setOptions({
   name: 'React-Pose Act',
-  url: 'https://github.com/rkhayat/react-pose-act',
+  url: 'https://www.npmjs.com/package/react-pose-act',
   goFullScreen: false,
   showLeftPanel: true,
   showDownPanel: true,

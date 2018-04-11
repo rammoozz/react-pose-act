@@ -1,6 +1,6 @@
 {
   "name": "react-pose-act",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Simple React Pose Animations",
   "main": "lib/index.js",
   "repository": "git@github.com:rkhayat/react-pose-act.git",

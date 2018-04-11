@@ -1,0 +1,96 @@
+{
+  "name": "react-pose-act",
+  "version": "0.1.2",
+  "description": "Simple React Pose Animations",
+  "main": "lib/index.js",
+  "repository": "git@github.com:rkhayat/react-pose-act.git",
+  "author": "robertrkhayat",
+  "license": "MIT",
+  "scripts": {
+    "start": "start-storybook -p 6006",
+    "test": "NODE_ENV=test jest",
+    "prebuild": "rimraf ./lib",
+    "build": "babel src --out-dir lib --copy-files --ignore test,*.stories.js --source-maps true",
+    "build:watch": "npm run build -- -w",
+    "postbuild": "node utils/generateModulesList.js",
+    "deploy:gp": "npm run build-storybook && gh-pages -m 'update [ci skip]' -d ./build",
+    "deploy:npm": "npm run build && npm publish ./",
+    "build-storybook": "build-storybook -o ./build",
+    "prettier": "prettier --single-quote --write"
+  },
+  "files": [
+    "lib",
+    "src",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@storybook/codemod": "^3.2.15",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.0.6",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-react-require": "^1.0.1",
+    "babel-plugin-transform-require-ignore": "^0.0.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "6.13.2",
+    "babel-preset-react": "6.11.1",
+    "babel-preset-stage-2": "6.13.0",
+    "babel-runtime": "^6.22.0",
+    "classnames": "^2.2.5",
+    "cross-env": "^3.1.4",
+    "css-loader": "0.23.1",
+    "css-modules-require-hook": "^4.0.5",
+    "debug": "^2.6.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "file-loader": "^0.10.1",
+    "gh-pages": "^0.12.0",
+    "jest": "^22.0.4",
+    "jsdom": "^9.9.1",
+    "node-sass": "^4.3.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.8.2",
+    "react-addons-test-utils": "^15.6.2",
+    "react-hot-loader": "3.0.0-beta.6",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^3.11.0"
+  },
+  "pre-commit": [
+    "test"
+  ],
+  "jest": {
+    "testRegex": "^.+\\.test\\.js?$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ],
+    "automock": false,
+    "setupFiles": [
+      "./setupJest.js"
+    ],
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    }
+  },
+  "dependencies": {
+    "@storybook/addon-info": "^3.4.1",
+    "@storybook/addon-links": "^3.2.15",
+    "@storybook/addon-options": "^3.2.15",
+    "@storybook/cli": "^3.2.15",
+    "@storybook/react": "^3.2.15",
+    "babel-plugin-react-docgen": "^1.9.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-icons": "^2.2.3",
+    "react-pose": "^1.3.0",
+    "react-test-renderer": "^16.1.1",
+    "react-tether": "^0.5.7",
+    "storybook-addon-markdown": "mihalik/storybook-addon-markdown",
+    "styled-components": "^2.1.1"
+  }
+}

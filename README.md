@@ -11,4 +11,6 @@
 
 
 `<Loading isLoading={isLoading}>{children}</Loading>`
+
+
 ##### [Demo](https://rkhayat.github.io/react-pose-act/)

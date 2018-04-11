@@ -33,7 +33,7 @@ storiesOf('Loading', module)
   .add('Simple Loading / Fade In',
     withInfo({propTables:[Loading],propTablesExclude:[Foo],text:`
       
-      import Loading from 'react-pose-act'
+      import Loading from 'react-pose-act/lib/Loading'
       <Loading isLoading={isLoading}>Loaded</Loading>
     `})(() =>
       <Foo>Hi!</Foo>

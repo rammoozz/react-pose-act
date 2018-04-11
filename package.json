@@ -1,6 +1,6 @@
 {
   "name": "react-pose-act",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Simple React Pose Animations",
   "main": "lib/index.js",
   "repository": "git@github.com:rkhayat/react-pose-act.git",
@@ -55,13 +55,14 @@
     "jsdom": "^9.9.1",
     "pre-commit": "^1.2.2",
     "prettier": "^1.8.2",
+    "react-test-renderer": "^16.1.1",
     "react-addons-test-utils": "^15.6.2",
     "react-hot-loader": "3.0.0-beta.6",
     "rimraf": "^2.5.4",
-    "sass-loader": "^4.1.1",
     "storybook-addon-markdown": "mihalik/storybook-addon-markdown",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.8",
+    "styled-components": "^2.1.1",
     "webpack": "^3.11.0"
   },
   "pre-commit": [
@@ -85,9 +86,6 @@
     "prop-types": "^15.6.0",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
-    "react-pose": "^1.3.0",
-    "react-test-renderer": "^16.1.1",
-    "styled-components": "^2.1.1",
-    "styled-spinkit": "^0.3.0"
+    "react-pose": "^1.3.0"
   }
 }

@@ -6,8 +6,6 @@ import Loading from '../Loading';
 import { withInfo } from '@storybook/addon-info';
 
 
-
-
 class Foo extends React.Component {
   constructor(props) {
     super(props);
@@ -36,7 +34,7 @@ storiesOf('Loading', module)
       import Loading from 'react-pose-act/lib/Loading'
        
       ~~~js
-      <Loading isLoading={isLoading}>Loaded</Loading>
+      <Loading isLoading={isLoading}>Hi!</Loading>
       ~~~
       
       
